@@ -1,0 +1,55 @@
+table {
+    margin-top: 200px;
+    color: white;
+    width: 70%;
+}
+td,th {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+#form-change {
+    width: 50%;
+    margin: auto;
+}
+form > div {
+    padding: 20px;
+}
+input {
+    overflow: none;
+    width: 60%;
+    height: 50px;
+}
+input {
+    font-size: 18px;
+}
+label {
+    font-size: 18px;
+    color: white;
+}
+input::placeholder {
+    margin-left: 15px;
+    font-size: 18px;
+    color: gray;
+}
+#clouse {
+    color: white;
+    font-size: 30px;
+    margin-left: 60%;
+    cursor: pointer;
+}
+#gender input {
+    width: 18px;
+    height: 18px;
+}
+#gender {
+    
+    font-size: 17px;
+}
+#addbtn {
+    padding: 5px 20px;
+    background: blue;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 10px
+}

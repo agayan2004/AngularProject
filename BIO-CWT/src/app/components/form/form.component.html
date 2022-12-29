@@ -1,0 +1,23 @@
+<section>
+    <div class="section-conteiner">
+        <h2>Any questions?</h2>
+        <div id="section-form">
+            <div>
+                <form [formGroup]="Form" (ngSubmit)="save()">
+                    <input formControlName="name" type="text" placeholder="Your name" id="name"><br>
+                    <input formControlName="phone" type="tel" placeholder="Your telephone number" id="phone"><br>
+                    <textarea formControlName="question" name="question" id="question" placeholder="Your questions" rows="7" id="qusestion"></textarea><br>
+                    <button [disabled]="Form.invalid">SEND</button>
+                </form>
+            </div>
+            <div>
+                <p>
+                    Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <button (click)="setVal()">Set Value</button>
+<button (click)="reset()">Reset</button> -->

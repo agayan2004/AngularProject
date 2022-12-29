@@ -1,0 +1,30 @@
+#section-contact {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    line-height: 100px;
+    color: white;
+    margin-top: 200px;
+}
+#section-contact h2 {
+    font-family: 'KyivType Sans Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    margin-bottom: 50px;
+}
+#section-contact div {
+    width: 550px;
+    padding: 15px;
+}
+@media screen and (max-width: 700px) {	
+    #section-contact div {
+        width: 100%;
+    }
+    #section-contact h2 {
+        font-size: 50px;
+    }
+}

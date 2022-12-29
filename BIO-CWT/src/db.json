@@ -1,0 +1,128 @@
+{
+  "user": [
+    {
+      "firstname": "Poxos",
+      "lastname": "Poxosyan",
+      "address": "Gyumri",
+      "gender": "Male",
+      "email": "poxos@gmail.com",
+      "phone": "+321 567634",
+      "age": 32,
+      "id": 1
+    },
+    {
+      "firstname": "Pedros",
+      "lastname": "Pedrosyan",
+      "address": "Erevan",
+      "gender": "Female",
+      "email": "pedros@gmail.com",
+      "phone": "+321 556454",
+      "age": 43,
+      "id": 2
+    }
+  ],
+  "work_with": [
+    {
+      "id": 1,
+      "image": "assets/images/kidsimg1.png",
+      "title": "OAK",
+      "category": [
+        {
+          "icon": "assets/images/true.png",
+          "name": "Durability"
+        },
+        {
+          "icon": "assets/images/true.png",
+          "name": "Beautiful texttrue"
+        },
+        {
+          "icon": "assets/images/true.png",
+          "name": "Expensive"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "assets/images/kidsimg3.png",
+      "title": "Buk",
+      "category": [
+        {
+          "icon": "assets/images/true.png",
+          "name": "Durability"
+        },
+        {
+          "icon": "assets/images/false.png",
+          "name": "Hard to handle"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "assets/images/kidsimg2.png",
+      "title": "Ash",
+      "category": [
+        {
+          "icon": "assets/images/true.png",
+          "name": "Durability"
+        },
+        {
+          "icon": "assets/images/false.png",
+          "name": "Hard to handle"
+        }
+      ]
+    }
+  ],
+  "aboutus": [
+    {
+      "title": "ABOUT US",
+      "text": "We manufacture solid wood products according to individual drawings. We make chairs, armchairs, wardrobes, beds and much more in our own workshop, equipped with all the necessary industrial equipment.",
+      "images": [
+        "assets/images/AU-img1.png",
+        "assets/images/AU-img2.png",
+        "assets/images/AU-img3.png"
+      ]
+    }
+  ],
+  "courser": [
+    "assets/images/sliderimg-1.png",
+    "assets/images/video.png",
+    "assets/images/img_x500_5f11b75511748.jpg"
+  ],
+  "navlinks": [
+    {
+      "itemname": "Gallery",
+      "itemlink": "gallery"
+    },
+    {
+      "itemname": "Prices for services",
+      "itemlink": "price"
+    },
+    {
+      "itemname": "About us",
+      "itemlink": "about"
+    },
+    {
+      "itemname": "Contact",
+      "itemlink": "contact"
+    }
+  ],
+  "headerinfon": [
+    {
+      "id": 1,
+      "title": "SOLID WOOD PRODUCTS",
+      "text": "Oak, beech, ash from 1700 CZK per m3",
+      "backgroundimg": "assets/images/header-bg.png",
+      "images": [
+        "assets/images/image.png",
+        "assets/images/image2.png",
+        "assets/images/image3.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ADVANTAGES WORJING WITH US",
+      "text": "In-house carpentry production We only treat wood with environmentally friendly and safe products Prices from the manufacturer, no extra charges",
+      "image": "assets/images/video.png"
+    }
+  ]
+}

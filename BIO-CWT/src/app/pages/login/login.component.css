@@ -1,0 +1,25 @@
+#conteinerlogin {
+    width: 400px;
+    margin: auto;
+    padding-top: 200px;
+}
+* {
+    padding-top: 10px;
+}
+input {
+    outline: none;
+}
+label {
+    color: white;
+}
+input.ng-invalid.ng-touched.ng-dirty {
+    border: 2px solid red;
+}
+input.ng-valid.ng-touched.ng-dirty {
+    border: 2px solid green;
+}
+@media screen and (max-width: 768px) {
+    #conteinerlogin {
+        width: 90%;
+    }
+}

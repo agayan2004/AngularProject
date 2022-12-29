@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div id="adm-block">
+    <div>
+        <ul>
+        <li>
+            <a [routerLink]="['/admin/post']" routerLinkActive="router-link-active" >Post</a>
+        </li>
+        </ul>
+        <ul>
+        <li>
+            <a [routerLink]="['/admin//category']" routerLinkActive="router-link-active" >Category</a>
+        </li>
+        </ul>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

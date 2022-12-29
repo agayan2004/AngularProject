@@ -1,0 +1,59 @@
+#priceList-slider {
+    width: 50%;
+    margin: auto;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 150px;
+}
+#priceList-slider img {
+    width: 60%;
+    height: 500px;
+}
+#priceList-slider h2 {
+    font-family: 'KyivType Sans Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 132.9%;
+    /* identical to box height, or 120px */
+
+    text-transform: uppercase;
+    color: #F5F5F5;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {	
+}
+@media screen and (max-width: 992px) {	
+    #priceList-slider img {
+        width: 80%;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 768px) {
+    * {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #priceList-slider img {
+        width: 100%;
+        height: 40vh
+    }
+    #priceList-slider {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+    #priceList-slider h2 {
+        font-family: 'KyivType Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 132.9%;
+        /* identical to box height, or 120px */
+    
+        text-transform: uppercase;
+        color: #F5F5F5;
+        text-align: left;
+    }
+}

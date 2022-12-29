@@ -1,0 +1,10 @@
+<div id="slider">
+    <h2>OUR WORK</h2>
+    <div id="slider-conteiner">
+          <carousel>
+            <slide *ngFor="let item of date; index as i">
+              <img src="{{date[i]}}" style="display: block; width: 100%;">
+            </slide>
+          </carousel>
+    </div>
+</div>

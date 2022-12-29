@@ -1,0 +1,79 @@
+<app-header></app-header>
+<table>
+  <tr>
+    <td><button id="addbtn" (click)="postData()">ADD</button></td>
+  </tr>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Gender</th>
+    <th>Phone</th>
+    <th>Age</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let item of date;">
+    <td>{{item.firstname}}</td>
+    <td>{{item.lastname}}</td>
+    <td>{{item.email}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.gender}}</td>
+    <td>{{item.phone}}</td>
+    <td>{{item.age}}</td>
+    <td>
+      <tr>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="setVal(item)">Change</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="deleteitem(item)">Delete</button>
+        </td>
+      </tr>
+    </td>
+  </tr>
+</table>
+
+<div id="form-change" *ngIf="this.formbool">
+  <span id="clouse" (click)="disp()">X</span>
+  <form  [formGroup]="Form" (ngSubmit)="save()">
+    <div>
+      <label for="firstname">First name</label><br>
+      <input type="text" placeholder="First name" id="firstname" formControlName="firstname">
+    </div>
+    <div>
+      <label for="lastname">Last name</label><br>
+      <input type="text" placeholder="Last name" id="lastname" formControlName="lastname">
+    </div>
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" placeholder="Email" id="email" formControlName="email">
+    </div>
+    <div>
+      <label for="address">Address</label><br>
+      <input type="address" placeholder="Address" id="address" formControlName="address">
+    </div>
+    <div>
+      <label for="gender">Gender</label><br>
+      <div id="gender">
+        <select name="gender" id="gender" [value]="" formControlName="gender">
+          <option value="gender" hidden>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="phone">Phone</label><br>
+      <input type="phone" placeholder="Phone" id="phone" formControlName="phone">
+    </div>
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" placeholder="Age" id="age" formControlName="age">
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+</div>

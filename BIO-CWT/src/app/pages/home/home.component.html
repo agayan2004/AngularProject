@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div id="header-bg">
+        <img src="{{this.date[0].backgroundimg}}" alt="Background Image" width="50%">
+    </div>
+    <div id="header-block">
+        <div id="header-text">
+            <h1>{{this.date[0].title}}</h1>
+            <p>{{this.date[0].text}}</p>
+            <button>Order</button>
+        </div>
+        <div id="header-images">
+            <div id="h-m"><img src="{{this.date[0].images[0]}}" alt="img"></div>
+            <div id="h-a">
+                <img src="{{this.date[0].images[2]}}" alt="img">
+                <img id="h-aImg2" src="{{this.date[0].images[1]}}" alt="img">
+            </div>
+        </div>
+    </div>
+<app-kinds></app-kinds>
+<app-karusel></app-karusel>
+<div id="kinds">
+    <h2>{{this.date[1].title}}</h2>
+    <div id="kinds-conteiner2">
+        <div>
+            <img src="{{this.date[1].image}}" alt="video image">
+        </div>
+        <div>
+            <p>{{this.date[1].text}}</p>
+        </div>
+    </div>
+    <div id="kinds-button">
+        <button>Receive a consultation</button>
+    </div>
+</div>
+<app-about-block></app-about-block>
+<app-form></app-form>
+<app-footer></app-footer>

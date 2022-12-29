@@ -1,0 +1,68 @@
+#kinds {
+    padding: 150px 50px;
+}
+#kinds h2 {
+    font-family: 'KyivType Sans Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    margin-left: 150px;
+}
+#kinds-conteiner {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Inter';
+    justify-content: space-around;
+}
+#kids-conteiner > div  {
+    width: 400px;
+    padding: 25px;
+}
+
+@media screen and (max-width: 1200px) {	
+    #kinds-conteiner2  {
+        width: 98%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 992px) {	
+    #kinds-conteiner2 img {
+        width: 100%;
+    }
+    #kinds h2 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-left: 30px;
+    }
+    #kinds {
+        padding: 40px 20px;
+        margin-top: 40vh;    
+    }
+}
+@media screen and (max-width: 768px) {
+    *{
+        justify-content: center;
+    }
+    * {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #kinds h2 {
+        margin: 0;
+        font-size: 35px;
+    }
+    #kinds-conteiner2  {
+        width: 100%;
+        justify-content: center;
+    }
+    #kinds h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

@@ -1,0 +1,234 @@
+html body {
+    background-color: #222021;
+    background-image: url(assets/images/body-bg.png);
+}
+*{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    list-style: none;
+    transition: 0.5s;
+    box-sizing: border-box;
+    outline: none;
+}
+body a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+h2:hover {
+    text-shadow: 2px 2px 8px white;
+}
+
+
+/* media */
+/* @media screen and (max-width: 1200px) {	
+    #kinds-conteiner2  {
+        width: 98%;
+    }
+    #body-img {
+        height: 600vh;
+    }
+    #header-text h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    #navbar-menu ul li {
+        margin-left: 20px;
+    }
+    #kinds h2 {
+        margin-left: 20px;
+    }
+    #slider-conteiner {
+        width: 90%;
+    }
+    #AU-text {
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 992px) {	
+    #body-img {
+        height: 5700px;
+    }
+    #aboutUs {
+        width: 100%;
+    }
+    #header-block { 
+        width: 90%;
+    }
+    #header-text h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #header-text p {
+        font-size: 20px;
+    }
+    #AU-text {
+        margin-left: 1%;
+    }
+    #kinds h2 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-left: 10px;
+    }
+    #slider-conteiner {
+        width: 90%;
+        height: 70vh;
+    }
+    height {
+        height: auto;
+    }
+    section {
+        background-position: 174% 171%;
+    }
+    #AU-text {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    #AU-img {
+        width: auto;
+    } 
+    #AU-img div {
+        margin: 10px;
+    }
+    .section-conteiner > h2 {
+        font-size: 60px;
+        line-height: 100%;
+    }
+    #kinds-conteiner2 img {
+        width: 100%;
+    }
+    #navbar-menu {
+        font-size: 18px;
+    }
+    #navbar-menu {
+        padding: 35px 0;
+    }
+    .error-text h1 {
+        font-family: 'KyivType Sans';
+        font-style: normal;
+        font-size: 300px;
+        line-height: 107.9%;
+        color: #F5F5F5;
+    }
+    .error-text h2 {
+        font-size: 60px;
+    }
+    #priceList-slider img {
+        width: 80%;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 768px) {
+    *{
+        justify-content: center;
+    }
+    .dropdown {
+        display: block;
+    }
+    #navbar-menu {
+        display: none;
+    }
+    * {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #navbar-logo {
+        padding: 15px 0 0 10px;
+    }
+    #header-block > div {
+        width: 300px;
+    }
+    #header-block {
+        margin-bottom: 20px;
+    }
+    #kinds h2 {
+        margin: 0;
+        font-size: 35px;
+    }
+    #slider-conteiner img {
+        height: auto;
+    }
+    #slider h2 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    #slider-conteiner {
+        height: auto;
+    }
+    #kinds-conteiner {
+        margin-top: 150px;
+    }
+    #kinds {
+        padding: 40px 20px;
+    }
+    #AU-text h2 {
+        font-size: 70px;
+    }
+    #section-form > div {
+        width: 300px;
+    }
+    #footer-cont > div {
+        margin: 15px 0;
+        text-align: center;
+    }
+    #section-contact h2 {
+        font-size: 50px;
+    }
+    .section-conteiner > h2 {
+        font-size: 40px;
+        line-height: 90%;
+    }
+    #AU-img div {
+        margin: 0px;
+    }
+    #AU-img img {
+        width: 90%;
+        margin: 5px;
+    }
+    .error-text h1 {
+        font-family: 'KyivType Sans';
+        font-style: normal;
+        font-size: 150px;
+        line-height: 107.9%;
+        color: #F5F5F5;
+        margin-top: 150px;
+    }
+    .error-text h2 {
+        font-size: 50px;
+    }
+    .error-text p {
+        font-size: 18px;
+    }
+    .error-text button {
+        background: #728BAD;
+        border-radius: 42px;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        color: #F5F5F5;
+    }
+    #priceList-slider img {
+        width: 100%;
+        height: 40vh
+    }
+    #priceList-slider {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+    #priceList-slider h2 {
+        font-family: 'KyivType Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 132.9%;
+        /* identical to box height, or 120px 
+    
+        text-transform: uppercase;
+        color: #F5F5F5;
+        text-align: left;
+    }
+} */

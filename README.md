@@ -1,2 +1,0 @@
-# BIO-CWT
-# Angular-project-
