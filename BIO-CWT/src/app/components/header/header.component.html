@@ -1,4 +1,5 @@
 <header>
+    <!-- <p (click)="show($event)"></p> -->
     <nav>
         <div id="navbar-logo">
             <a routerLink="/home"><img src="assets/images/logo.png" alt="LOGO"></a>
@@ -6,7 +7,6 @@
         <div id="navbar-menu">
             <ul>
                 <li *ngFor="let link of date"><a routerLink="/{{this.link.itemlink}}"  routerLinkActive="active">{{this.link.itemname}}</a></li>
-                <li><a  routerLinkActive="active"><img src="assets/images/user.png" alt="user" id="user"></a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -14,8 +14,7 @@
             <div class="dropdown-content">
                 <ul>
                     <li *ngFor="let link of date"><a routerLink="/{{link.itemlink}}"  routerLinkActive="active">{{link.itemname}}</a></li>
-                    <li><a  routerLinkActive="active">Profile</a></li>
-                </ul>
+                 </ul>
             </div>
         </div>
     </nav>

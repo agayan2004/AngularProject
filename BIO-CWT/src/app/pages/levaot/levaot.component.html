@@ -1,18 +1,25 @@
 <app-header></app-header>
-<div id="adm-block">
-    <div>
-        <ul>
-        <li>
-            <a [routerLink]="['/admin/post']" routerLinkActive="router-link-active" >Post</a>
-        </li>
-        </ul>
-        <ul>
-        <li>
-            <a [routerLink]="['/admin//category']" routerLinkActive="router-link-active" >Category</a>
-        </li>
-        </ul>
+
+<div id="wind">
+    <div id="adm-block">
+        <div>
+            <ul>
+                <li>
+                    <a [routerLink]="['/admin/work_with']" routerLinkActive="router-link-active">Work with</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/admin/nav_links']" routerLinkActive="router-link-active">Nav links</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/admin/courser']" routerLinkActive="router-link-active" >Courser</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/admin/questions']" routerLinkActive="router-link-active" >Questions</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div>
+    <div id="info">
         <router-outlet></router-outlet>
     </div>
 </div>

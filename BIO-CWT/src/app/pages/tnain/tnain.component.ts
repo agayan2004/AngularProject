@@ -12,7 +12,6 @@ import { RequestService } from 'src/service/request.service';
 
 
 export class TnainComponent implements OnInit {
-[x: string]: any;
 
   public Form: any
   public formbool:boolean = false

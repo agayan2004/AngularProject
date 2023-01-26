@@ -1,0 +1,29 @@
+<table>
+    <tr><button style="margin-left: 100px;" (click)="postData()">ADD</button></tr>
+    <tr>
+        <th>Links</th>
+        <th>Href links</th>
+        <th>Change</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let link of date" routerLinkActive="active">
+        <td>{{this.link.itemname}}</td>
+        <td>{{this.link.itemlink}}</td>
+        <td><button (click)="chengeItem(link)">Chenge</button></td>
+        <td><button (click)="deleteItem(link.id)">Delete</button></td>
+    </tr>
+</table>
+
+<form *ngIf="this.formbool" [formGroup]="Form" (ngSubmit)="save()">
+    <div>
+        <label for="name">Link Name</label><br>
+        <input type="text" id="name" placeholder="Link Name" formControlName="itemname">
+    </div>
+    <div>
+        <label for="name">Router Name</label><br>
+        <input type="text" id="name" placeholder="Router Name" formControlName="itemlink">
+    </div>
+    <div>
+        <input type="submit" [disabled]="Form.invalid">
+    </div>
+</form>

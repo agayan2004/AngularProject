@@ -1,0 +1,25 @@
+<table>
+    <tr><button (click)="postDate()">ADD</button></tr>
+    <tr>
+        <th>Images</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let item of date">
+        <td>
+            <img src="{{item.image}}" style="display: block; width: 100%;">
+        </td>
+        <th><button (click)="deleteitem(item.id)">Delete</button></th>
+    </tr>
+</table>
+
+<div>
+    <form *ngIf="this.formbool" (ngSubmit)="save()" onsubmit="event.preventDefault()" [formGroup]="Form">
+        <div>
+            <label>Image</label><br>
+            <input type="file" formControlName="formimage">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</div>

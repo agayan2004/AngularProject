@@ -13,7 +13,8 @@ export const environment = {
     getaboutus: host + '/aboutus',
     getcourser: host + '/courser',
     getnavlinks: host + "/navlinks",
-    getheaderinfon: host + "/headerinfon"
+    getheaderinfon: host + "/headerinfon",
+    getquestion: host + "/questions"
   }
 };
 

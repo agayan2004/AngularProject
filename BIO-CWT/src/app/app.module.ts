@@ -12,9 +12,15 @@ import { AppComponent } from './app.component';
 import { Route, RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LevaotComponent } from './pages/levaot/levaot.component';
-import { PostComponent } from './pages/post/post.component';
-import { CategoryComponent } from './pages/category/category.component';
+
 import { SheryModule } from "./components/shery/shery.module";
+import { TrimPipe } from './pipes/trim.pipe';
+import { ClickDirective } from './directives/click.directive';
+import { WorkWithComponent } from './pages/work-with/work-with.component';
+import { CourserComponent } from './pages/courser/courser.component';
+import { NavlinksComponent } from './pages/navlinks/navlinks.component';
+import { CommonModule } from '@angular/common';
+import { QuestionsComponent } from './pages/questions/questions.component';
 
 
 
@@ -45,7 +51,7 @@ const router: Route[] = [
     loadChildren: () => import('./pages/gallery/gallery.module').then(m => m.GalleryModule)  
   },
   {
-    path: "login",
+    path: "admin_login",
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)    
   },
   {
@@ -57,12 +63,20 @@ const router: Route[] = [
     component: LevaotComponent,
     children: [
       {
-        path: "post",
-        component: PostComponent
+        path: "work_with",
+        component: WorkWithComponent
       }, 
       {
-        path: "category",
-        component: CategoryComponent
+        path: "questions",
+        component: QuestionsComponent
+      }, 
+      {
+        path: "nav_links",
+        component: NavlinksComponent 
+      },
+      {
+        path: "courser",
+        component: CourserComponent
       }
     ]
   },
@@ -76,8 +90,12 @@ const router: Route[] = [
     declarations: [
         AppComponent,
         LevaotComponent,
-        PostComponent,
-        CategoryComponent
+        TrimPipe,
+        ClickDirective,
+        WorkWithComponent,
+        CourserComponent,
+        NavlinksComponent,
+        QuestionsComponent
     ],
     exports: [],
     providers: [],
@@ -91,7 +109,10 @@ const router: Route[] = [
         ButtonsModule.forRoot(),
         ModalModule.forRoot(),
         TooltipModule.forRoot(),
-        SheryModule
+        SheryModule,
+        CommonModule,
+    ReactiveFormsModule,
+    RouterModule,
     ]
 })
 export class AppModule { }

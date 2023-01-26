@@ -26,16 +26,15 @@ export class LoginComponent implements OnInit {
         [Validators.required,Validators.pattern(/^[a-zA-Z0-9!@#$%^&*]{6,16}$/)])],
     });
   }
-login(value: any) {
 
-  this.request.postData(this.url, value).subscribe((data:object) => {
+save():any {
+  this.request.postData(this.url, this.Form.value).subscribe((data:object) => {
     this.admtoken = data
     localStorage.setItem('token', this.admtoken.token)
   });
-}
-  
-  save() {
-    this.login(this.Form.value)        
+  if (localStorage.getItem("token")) {
+    return window.location.href = 'admin';
   }
+}
 
 }

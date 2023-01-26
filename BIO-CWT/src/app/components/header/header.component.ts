@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { RequestService } from 'src/service/request.service';
 
@@ -11,7 +11,16 @@ import { RequestService } from 'src/service/request.service';
 
 })
 export class HeaderComponent implements OnInit {
+  // @Input("test") data: string = ""
+  // @Input() name: string = ""
+  // @Output("out") out: EventEmitter<any> = new EventEmitter<any>()
 
+
+
+  show(e:Event) {// avelacnmenq event orinak child comp* mej vor clicki jamanak sh
+    console.log(e); 
+  }
+  
   private url:string =  environment.home.getnavlinks 
   public date:any
   constructor(public request: RequestService) { }
@@ -19,16 +28,14 @@ export class HeaderComponent implements OnInit {
 
   
   ngOnInit(): void {
+    // console.log(this.data);
+    
     this.request.getData(this.url).subscribe((data) => {
       this.date = data      
     });
+    
+    // this.out.emit()
   }
-
-  otherMethod() {
-    return "/login"
-  }
-}
-function isLogined() {
   
 }
 

@@ -1,0 +1,22 @@
+table tr td {
+    padding: 20px;
+}
+* {
+    color: white;
+    font-size: 20px;
+}
+button {
+    color: black;
+}
+th {
+    text-align: center;
+}
+img {
+    width: 60px;
+    height: 60px;
+}
+#icons {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+}

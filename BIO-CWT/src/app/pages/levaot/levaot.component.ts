@@ -9,7 +9,10 @@ export class LevaotComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit():void {
+    if (!localStorage.getItem('token')) {
+      window.location.href = 'admin_login';
+    }
   }
 
 }

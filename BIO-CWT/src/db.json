@@ -28,14 +28,17 @@
       "title": "OAK",
       "category": [
         {
+          "id": 1,
           "icon": "assets/images/true.png",
           "name": "Durability"
         },
         {
+          "id": 2,
           "icon": "assets/images/true.png",
           "name": "Beautiful texttrue"
         },
         {
+          "id": 3,
           "icon": "assets/images/true.png",
           "name": "Expensive"
         }
@@ -84,26 +87,39 @@
     }
   ],
   "courser": [
-    "assets/images/sliderimg-1.png",
-    "assets/images/video.png",
-    "assets/images/img_x500_5f11b75511748.jpg"
+    {
+      "id": 1,
+      "image": "assets/images/sliderimg-1.png"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/video.png"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/img_x500_5f11b75511748.jpg"
+    }
   ],
   "navlinks": [
     {
       "itemname": "Gallery",
-      "itemlink": "gallery"
+      "itemlink": "gallery",
+      "id": 1
     },
     {
+      "id": 2,
       "itemname": "Prices for services",
       "itemlink": "price"
     },
     {
+      "id": 3,
       "itemname": "About us",
       "itemlink": "about"
     },
     {
       "itemname": "Contact",
-      "itemlink": "contact"
+      "itemlink": "contact",
+      "id": 4
     }
   ],
   "headerinfon": [
@@ -123,6 +139,14 @@
       "title": "ADVANTAGES WORJING WITH US",
       "text": "In-house carpentry production We only treat wood with environmentally friendly and safe products Prices from the manufacturer, no extra charges",
       "image": "assets/images/video.png"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "first_name": "Poxos",
+      "last_name": "Poxosyan",
+      "question": "This website for sale?"
     }
   ]
 }

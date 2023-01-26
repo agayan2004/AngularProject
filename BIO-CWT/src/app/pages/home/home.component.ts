@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, AfterViewInit, AfterViewChecked, ViewChild, ElementRef, Renderer2  } from '@angular/core';
 import { User } from 'src/app/models/user';
 import { environment } from 'src/environments/environment';
 import { RequestService } from 'src/service/request.service';
@@ -18,8 +18,13 @@ export class HomeComponent implements OnInit {
 
   public date:any
   private url:string =  environment.home.getheaderinfon 
+  @ViewChild('test') el!: HTMLElement
+
+  getout(params:Event) {
+    
+  }
   
-  constructor(public request: RequestService) { 
+  constructor(public request: RequestService, public elementRef: ElementRef, public renderer: Renderer2) { 
     
   }
   
@@ -27,14 +32,22 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {// henc kayq@ amboxchovi zagruzkae exnm me anqamme kanchm tvyal functian
     this.request.getData(this.url).subscribe((data) => {
       this.date = data
-      console.log(this.date[0]);
-      
     });
+  }
+
+  ngAfterViewInit(): void {// kanchvme epo sayt@ nkarvm prcnme
+    // console.log(this.elementRef);
+    // console.log(this.renderer);// html tegeri het ashxatelu dzev 
+    
+  }
+
+  ngAfterViewChecked() {// henco componenti mej popoxutune exnm u ngfor-i popoxutyan vaxte kanchvm
+
   }
 
 
 
-  create(): void {
+  // create(): void {
   //   let value = {
         // "firstname": "Mike",
         // "lastname": "Jonson",
@@ -56,6 +69,6 @@ export class HomeComponent implements OnInit {
   // public isShow: boolean = true
   // toggle ():void {
   //   this.isShow = !this.isShow
-  }
+  // }
 
 }
